@@ -32,6 +32,20 @@ RegisterNetEvent('RSGCore:Client:OnPlayerUnload', function()
 end)
 ```
 
+### RSG-Spawn:Client:NewPlayer
+
+* Handles the event triggered after the player creates their character.
+
+{% hint style="success" %}
+Triggered after the player creates their character. This event is useful for executing actions or displaying UI elements immediately after a player has created their new character.
+{% endhint %}
+
+```lua
+RegisterNetEvent('rsg-spawn:client:newplayer', function()
+    print('Im a client and i just logged out of your server!')
+end)
+```
+
 ### RSGCore:Command:SpawnVehicle
 Arguments = WagonName
 
